@@ -9,7 +9,7 @@ FPS = 24
 SPIN_SPEED = 0.6
 TILT = 0.30
 CAM_DIST = 4.0
-MESSAGE = "for you ♥"
+MESSAGE = ""
 NUM_HEARTS = 18
 
 WHITE = [244, 248, 251, 254, 255, 231]
@@ -322,12 +322,6 @@ def render(scene, t, cols, rows, hearts):
         if start + i < cols:
             chars[mrow][start + i] = ch
             colors[mrow][start + i] = MSG_COLORS[(i + shift) % len(MSG_COLORS)]
-    hint = "@alishsharma on tiktok!"
-    hstart = max(0, (cols - len(hint)) // 2)
-    for i, ch in enumerate(hint):
-        if hstart + i < cols:
-            chars[rows - 1][hstart + i] = ch
-            colors[rows - 1][hstart + i] = 238
 
     lines = []
     for r in range(rows):
@@ -376,7 +370,6 @@ def main():
         pass
     finally:
         sys.stdout.write(RESET + "\033[?25h\033[2J\033[H")
-        print("\033[38;5;205m♥\033[0m")
-
-
+        print("\033[38;5;205m♥\033[0m") 
+        
 main()
