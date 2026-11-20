@@ -50,23 +50,16 @@ python3 ascii-flower-bouquet.py
 
 ```text
 python-scripts/
-├── .gitignore
 ├── README.md
-├── project-template/          # copy this folder to start a new project
-│   └── README.md
 └── ascii-flower-bouquet/
     ├── README.md
-    ├── ascii-flower-bouquet.py
-    └── LICENSE
+    └── ascii-flower-bouquet.py
 ```
 
 Every new project follows the same pattern: one folder, one `README.md`, and the script(s) inside.
 
 ## 🤝 Credits and licenses
 
-> [!NOTE]
-> Each project folder includes its own license and credits. Some scripts are based on open-source work by other authors, always credited in the project's `README.md`.
-
 ## 👩‍💻 Author
 
-Made by [@](https://github.com/).
+Made by [@arpz-dev](https://github.com/arpz-dev).
